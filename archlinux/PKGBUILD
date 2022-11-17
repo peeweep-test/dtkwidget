@@ -1,23 +1,23 @@
 # Maintainer: justforlxz <justforlxz@gmail.com>
-pkgname=dtkwidget-git
+pkgname=dtkwidget
 pkgver=5.5.45.r1.gbc050fca
 pkgrel=1
 pkgdesc='Deepin graphical user interface library'
 arch=('x86_64' 'aarch64')
 url="https://github.com/linuxdeepin/dtkwidget"
 license=('LGPL3')
-depends=('deepin-qt-dbus-factory-git' 'dtkcore-git' 'dtkgui-git' 'librsvg' 'qt5-multimedia' 'qt5-svg'
+depends=('deepin-qt-dbus-factory-git' 'dtkcore' 'dtkgui' 'librsvg' 'qt5-multimedia' 'qt5-svg'
          'qt5-x11extras' 'startup-notification')
-makedepends=('git' 'qt5-tools' 'gtest' 'dtkcommon-git' 'dtkcore-git' 'dtkgui-git' 'ninja' 'cmake' 'doxygen')
+makedepends=('git' 'qt5-tools' 'gtest' 'dtkcommon' 'dtkcore' 'dtkgui' 'ninja' 'cmake' 'doxygen')
 provides=('dtkwidget')
 conflicts=('dtkwidget')
 groups=('deepin-git')
-source=('source.tar.gz')
+source=('${pkgname}_${pkgver}.tar.xz')
 sha512sums=('SKIP')
 
 
 build() {
-  cd $deepin_source_name
+  cd ${pkgname}
   cmake -GNinja \
       -DHUNTER_ENABLED=OFF \
       -DMKSPECS_INSTALL_DIR=/usr/lib/qt/mkspecs/modules/\
@@ -31,6 +31,6 @@ build() {
 }
 
 package() {
-  cd $deepin_source_name
+  cd ${pkgname}
   DESTDIR="$pkgdir" ninja install
 }
