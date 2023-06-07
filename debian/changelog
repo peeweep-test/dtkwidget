@@ -1,5 +1,12 @@
 dtkwidget (5.6.12) jammy; urgency=medium
 
+  [ runner@fv-az564-728.rdklwxoyddcefobsmsmtkszgre.dx.internal.cloudapp.net ]
+  * UNRELEASED
+
+ -- Deepin Packages Builder <packages@deepin.org>  Wed, 07 Jun 2023 09:36:17 +0000
+
+dtkwidget (5.6.12) jammy; urgency=medium
+
   [ runner@fv-az488-126 ]
   * UNRELEASED
 
