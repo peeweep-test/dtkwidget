@@ -3,6 +3,13 @@ dtkwidget (6.0.2) unstable; urgency=medium
   [ Astrea ]
   * UNRELEASED
 
+ -- Deepin Packages Builder <packages@deepin.org>  Thu, 06 Jul 2023 17:14:31 +0800
+
+dtkwidget (6.0.2) unstable; urgency=medium
+
+  [ Astrea ]
+  * UNRELEASED
+
  -- Deepin Packages Builder <packages@deepin.org>  Thu, 06 Jul 2023 17:07:41 +0800
 
 dtkwidget (6.0.2) unstable; urgency=medium
